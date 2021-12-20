@@ -1,3 +1,7 @@
+h1{
+	padding-bottom: 0px;
+}
+
 h3{
 	text-align: center;
 }
@@ -5,6 +9,12 @@ h3{
 main p, main ul{
 	font-size: 20px;
 	margin: 0px;
+}
+
+.button-wrapper{
+	display: flex;
+	justify-content: end;
+	margin-right: 30px;
 }
 
 #cv-wrapper{

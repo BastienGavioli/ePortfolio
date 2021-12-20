@@ -35,9 +35,7 @@ nav a:hover{
 
 h1{
 	padding: 50px 0;
-/*	background-color: #D3D3D3;
-	border-bottom: 1px solid gray;
-*/	font-family: "Germania One", serif;
+	font-family: "Germania One", serif;
 	font-size: 60px;
 	color: #0061E4;
 	text-align: center;
@@ -45,7 +43,11 @@ h1{
 }
 
 h2{
-	color: royalblue;
+	color: #67B7D1;
+}
+
+h4{
+	color: #0061E4;
 }
 
 .button-wrapper a{
@@ -67,4 +69,24 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding-top: 20px;
+}
+
+.footer-column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-column a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px;
+	color: #252525;
+	text-decoration: none;
+}
+
+.footer-column a:hover{
+	color: #0061E4;
 }
