@@ -1,0 +1,8 @@
+body {
+	background-image: url("./ressources/index.jpg");
+	background-attachment: fixed;
+	/*Empèche le fond de défiler avec le texte*/
+    background-repeat: no-repeat;
+    /*Si l'écran plus grand que le fond, empèche celui-ci de se dupliquer*/
+    background-size: cover;
+}
