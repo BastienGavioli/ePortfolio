@@ -1,11 +1,13 @@
 @font-face{
-	font-family: "ubuntu";
+	font-family: "Ubuntu";
 	src:  url(../ressources/font/Ubuntu-Regular.ttf);
+	font-family: "Germania One";
+	src:  url(../ressources/font/GermaniaOne-Regular.ttf);
 }
 
 body{
 	margin: 0px 0px;
-	font-family: "ubuntu", arial;
+	font-family: "Ubuntu", arial, sans-serif;
 }
 
 nav {
@@ -22,7 +24,7 @@ nav a{
 	display: flex;
 	align-items: center;
 	padding: 0 20px;
-	color: white;
+	color: #FFF;
 	font-size: 20px;
 	text-decoration: none;
 }
@@ -32,16 +34,33 @@ nav a:hover{
 }
 
 h1{
+	padding: 50px 0;
+/*	background-color: #D3D3D3;
+	border-bottom: 1px solid gray;
+*/	font-family: "Germania One", serif;
+	font-size: 60px;
+	color: #0061E4;
 	text-align: center;
+	
 }
 
 h2{
 	color: royalblue;
 }
 
+.button-wrapper a{
+	margin: 10px 10px;
+	padding: 10px 15px;
+	background-color: lightblue;
+	border: 2px solid #252525;
+	color: #252525;
+	font-size: 20px;
+	text-decoration: none;
+}
+
 footer {
-	border-top: 0.5em solid #CCF;
 	margin-top: 20px;
+	background-color: #CCF;
 }
 
 #liens-footer{
