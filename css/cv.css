@@ -1,11 +1,11 @@
 h3{
 	text-align: center;
 }
+
 main p, main ul{
 	font-size: 20px;
 	margin: 0px;
 }
-
 
 #cv-wrapper{
 	display: flex;
