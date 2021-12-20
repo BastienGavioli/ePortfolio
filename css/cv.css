@@ -1,0 +1,30 @@
+h3{
+	text-align: center;
+}
+main p, main ul{
+	font-size: 20px;
+	margin: 0px;
+}
+
+
+#cv-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#cv-left{
+	margin: auto auto auto 50px;
+	width: 30%;
+}
+
+#cv-right{
+	display: block;
+	flex: right;
+	margin: 10px 50px 2px auto;
+	width: 60%;
+	height: 60%;
+}
+
+#cv-right div{
+	margin-bottom: 20px;
+}
