@@ -66,18 +66,27 @@ h4{
 
 footer {
 	margin-top: 20px;
+	padding-left: 70px;
 	background-color: #CCF;
 }
 
 #liens-footer{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	padding-top: 20px;
+	padding: 20px 70px 0px;
+}
+
+#social-networks{
+	text-align: center;
 }
 
 #social-networks a{
 	margin-left: 10px;
+}
+
+.footer-column a:hover{
+	color: #0061E4;
 }
 
 .footer-column{
@@ -93,8 +102,4 @@ footer {
 	margin-bottom: 10px;
 	color: #252525;
 	text-decoration: none;
-}
-
-.footer-column a:hover{
-	color: #0061E4;
 }
