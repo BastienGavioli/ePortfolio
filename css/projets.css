@@ -30,6 +30,11 @@ section{
 	justify-content: space-between;
 }
 
+.button-wrapper .github{
+	background-color: #34d058;
+	text-align: center;
+}
+
 #dracovente{
 	background-color: #FAAA6D;
 }
