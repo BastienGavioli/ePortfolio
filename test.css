@@ -1,0 +1,52 @@
+nav {
+	display: flex;
+	padding: 5px 10px;
+	/*background-color: #252525;*/
+}
+
+#logo{
+	border-top: none;
+}
+
+nav a{
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	color: #252525;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	text-decoration: underline;
+	color: #0061E4;
+}
+
+@font-face{
+	font-family: "Ubuntu";
+	src:  url(./ressources/font/Ubuntu-Regular.ttf);
+	font-family: "Germania One";
+	src:  url(./ressources/font/GermaniaOne-Regular.ttf);
+}
+
+body{
+	margin: 0px 0px;
+	font-family: "Ubuntu", arial, sans-serif;
+	background-image: url("./ressources/index.jpg");
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+	padding: 50px 0;
+	font-family: "Germania One", serif;
+	font-size: 50px;
+	color: #0061E4;
+	text-align: center;
+	
+}
+
+h2{
+	color: #67B7D1;
+}
