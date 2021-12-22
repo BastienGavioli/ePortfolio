@@ -17,10 +17,13 @@ body{
 #no-burger {
 	display: flex;
 	padding: 5px 10px;
-	background-color: #252525;
+	/*background-color: #252525;*/
 }
 
-#logo{
+#no-burger .logo{
+	font-family: "Germania One", serif;
+	font-size: 44px;
+	color: #0061E4;
 	border-top: none;
 }
 
@@ -29,7 +32,7 @@ body{
 	align-items: center;
 	padding: 0 20px;
 	font-family: "Germania One", serif;
-	color: #FFF;
+	color: #252525;
 	font-size: 20px;
 	text-decoration: none;
 }
@@ -38,7 +41,7 @@ body{
 	border-top: solid;
 }
 
-.menu-wrap{
+header > .logo, .menu-wrap{
 	display: none;
 }
 
@@ -116,6 +119,16 @@ footer {
 @media (max-width: 900px){
 	#no-burger{
 		display: none;
+	}
+
+	header{text-align: center;}
+
+	header > .logo{
+		font-family: "Germania One", serif;
+		font-size: 44px;
+		color: #0061E4;
+		border-top: none;
+		text-decoration: none;
 	}
 
 	.menu-wrap {
@@ -231,7 +244,7 @@ footer {
 	  background: #f0f0f0;
 	  border-radius: 50%;
 	  width: 200vw;
-	  height: 100%;
+	  height: 200vw;
 	  display: flex;
 	  flex: none;
 	  align-items: center;
