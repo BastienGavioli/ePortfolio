@@ -113,12 +113,13 @@ footer {
 	text-decoration: none;
 }
 
-@media all and (max-width: 900px){
+@media (max-width: 900px){
 	#no-burger{
 		display: none;
 	}
 
 	.menu-wrap {
+		display: block;
 		position: fixed;
 		top: 0;
 		right: 63px;
