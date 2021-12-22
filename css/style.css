@@ -124,6 +124,7 @@ footer {
 	header{text-align: center;}
 
 	header > .logo{
+		display: block;
 		font-family: "Germania One", serif;
 		font-size: 44px;
 		color: #0061E4;
