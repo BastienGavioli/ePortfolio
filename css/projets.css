@@ -55,11 +55,17 @@ section{
 	text-align: center;
 }
 
+#itchi{
+	background-color: #DF566D;
+}
+
+#sportacus{
+	background-color: #8A7EB9;
+}
+
 #dracovente{
 	background-color: #FAAA6D;
 }
-
-
 
 #apercu{
 	margin-top: 10px;
@@ -80,12 +86,12 @@ section{
 	margin: 20px 20px 2px;
 }
 
-#type-one-dracovente {
+#img-rectangle {
 	width:  411px;
 	height: 190px;
 }
 
-#type-two-dracovente{
+#img-square{
 	width:  184px;
 	height:  321px;
 }
