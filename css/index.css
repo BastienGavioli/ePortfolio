@@ -1,8 +1,8 @@
-h1, p{
+h1, main p{
 	color: #0061E4;
 }
 
-p{
+main p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
