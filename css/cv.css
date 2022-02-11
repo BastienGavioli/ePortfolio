@@ -1,5 +1,5 @@
 h1{
-	padding-bottom: 0px;
+	padding-bottom: 0;
 }
 
 h3{
@@ -7,8 +7,8 @@ h3{
 }
 
 main p, main ul{
-	font-size: 20px;
-	margin: 0px;
+	font-size: 1.25rem;
+	margin: 0;
 }
 
 .button-wrapper{
@@ -19,22 +19,31 @@ main p, main ul{
 
 #cv-wrapper{
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-between;
+	word-wrap: break-word;
 }
 
 #cv-left{
-	margin: auto auto auto 50px;
-	width: 30%;
+	margin: 0 10px 10px 15px;
+	max-width: 30%;
 }
 
 #cv-right{
 	display: block;
-	flex: right;
-	margin: 10px 50px 2px auto;
-	width: 60%;
-	height: 60%;
+	margin: 20px 20px 2px 15px;
+
 }
 
 #cv-right div{
 	margin-bottom: 20px;
+}
+
+@media all and (max-width: 768px) {
+	#cv-wrapper{
+		flex-wrap: wrap;
+	}
+
+	#cv-left, #cv-right{
+		max-width: 100%;
+	}
 }

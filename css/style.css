@@ -1,12 +1,12 @@
 @font-face{
 	font-family: "Ubuntu";
 	src:  url(../ressources/font/Ubuntu-Regular.ttf);
-	font-family: "Germania One";
+	font-family: 'Germania One';
 	src:  url(../ressources/font/GermaniaOne-Regular.ttf);
 }
 
 body{
-	margin: 0px 0px;
+	margin: 0 0;
 	font-family: "Ubuntu", arial, sans-serif;
 	background-image: url("../ressources/index.jpg");
 	background-attachment: fixed;
@@ -79,10 +79,11 @@ a{
 }
 
 footer {
-	margin-top: 20px;
+	margin-top: 100px;
 	padding-left: 70px;
-	padding-bottom: 100px;
+	padding-bottom: 10px;
 	background-color: #CCF;
+	border-top: solid 2px #252525;
 }
 
 footer .logo{
@@ -92,8 +93,27 @@ footer .logo{
 	text-decoration: none;
 }
 
-#liens-footer{
-	padding-top: 20px;
+
+#footer-column-wrapper{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 20px auto auto;
+}
+
+#footer-nav{
+	margin-top: 20px;
+}
+
+#footer-nav a{
+	margin: 0 20px 10px;
+	color: #252525;
+	text-decoration: none;
+	white-space:nowrap;
+}
+
+#footer-nav a:hover{
+	color: #0061E4;
 }
 
 #social-networks{
@@ -104,37 +124,10 @@ footer .logo{
 	margin-left: 10px;
 }
 
-#footer-column-wrapper{
-	display: flex;
-	justify-content: space-around;
-	margin: auto;
-}
-
-.footer-column{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.footer-column a{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 10px;
-	color: #252525;
-	text-decoration: none;
-}
-
-.footer-column a:hover{
-	color: #0061E4;
-}
-
 @media (max-width: 992px){
 	#no-burger{
 		display: none;
 	}
-
-	/*header{text-align: center;}*/
 
 	header > .logo{
 		display: block;
@@ -287,9 +280,5 @@ footer .logo{
 		font-family: "Germania One", serif;
 		text-decoration: none;
 		transition: color 0.4s ease;
-	}
-
-	footer{
-		display: none;
 	}
 }
