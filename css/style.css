@@ -20,6 +20,7 @@ body{
 	display: flex;
 	padding: 5px 10px;
 	background-color: #0061E4;
+	box-shadow: 0 1px 5px black;
 	width: 100%;
 }
 
@@ -65,13 +66,17 @@ header > .logo, .menu-wrap{
 	display: none;
 }
 
+#page-title{
+	margin-bottom: 80px;
+	padding: 80px 0;
+	background-color: #0061E4;
+	color: #FFFFFF;
+}
+
 h1{
-	padding: 50px 0;
 	font-family: "Germania One", serif;
 	font-size: 50px;
-	color: #0061E4;
 	text-align: center;
-	
 }
 
 h2{
@@ -97,7 +102,7 @@ a{
 }
 
 footer {
-	margin-top: 100px;
+	padding-top: 10px;
 	padding-left: 70px;
 	padding-bottom: 10px;
 	background-color: #CCF;

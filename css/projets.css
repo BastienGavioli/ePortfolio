@@ -1,5 +1,9 @@
-h2{
+h2 {
 	text-align: center;
+}
+
+#sections-wrapper{
+	margin-bottom: 80px;
 }
 
 section{
