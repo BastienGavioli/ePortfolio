@@ -5,6 +5,12 @@
 	src:  url(../ressources/font/GermaniaOne-Regular.ttf);
 }
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body{
 	margin: 0 0;
 	font-family: "Ubuntu", arial, sans-serif;
@@ -14,56 +20,67 @@ body{
     background-size: cover;
 }
 
-#no-burger {
+header{
 	position: fixed;
-	top: 0;left: 0;
-	display: flex;
-	padding: 5px 10px;
-	background-color: #0061E4;
-	box-shadow: 0 1px 5px black;
+	top: 0;
+	left: 0;
 	width: 100%;
+	padding: 5px 10px;
+	background: #FFFFFF;
+	color: #0061e4;
 }
 
-#no-burger .logo{
+nav{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
 	font-family: "Germania One", serif;
 	font-size: 44px;
+	color: #0061e4;
+	text-decoration: none;
 }
 
-#no-burger .logo:hover{
-	border-top: none;
+#toggle{
+	display: none;
 }
 
-#no-burger a{
+.menu{
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0 20px;
+	width: 550px;
+	list-style: none;
+}
+
+.menu {
+	padding: 0 10px;
+}
+
+.menu li a{
 	font-family: "Germania One", serif;
 	font-size: 20px;
+	padding: 10px;
+	color: #0061e4;
 	text-decoration: none;
-	color: #FFFFFF;
 }
 
-#no-burger a:hover{
+.menu li a:hover{
 	border-top: solid;
 }
 
-#header-social-networks{
-	display: flex;
-	margin-left: auto;
-	border-top: none;
-}
-
 #header-social-networks a{
-	padding-left: 0;
+	color: #0061e4;
+	padding: 0 10px;
 }
 
 #header-social-networks a:hover{
 	border-top: none;
 	color: black;
-}
-
-header > .logo, .menu-wrap{
-	display: none;
 }
 
 #page-title{
@@ -157,161 +174,66 @@ footer .logo{
 }
 
 @media (max-width: 992px){
-	#no-burger{
+	#toggle{
+		display: block;
+		cursor: pointer;
+		font-size: 2rem;
+		position: relative;
+		z-index: 20;
+	}
+
+	.ouvrir{
+		display: block;
+	}
+
+	.fermer{
+		display: none !important;
+	}
+
+	.open .ouvrir{
 		display: none;
 	}
 
-	header > .logo{
-		display: block;
-		font-family: "Germania One", serif;
-		font-size: 44px;
-		color: #0061E4;
+	.open .fermer{
+		display: block !important;
+	}
+
+	.logo{
+		margin: auto;
+		z-index: 20;
+	}
+
+	.menu{
+		position: absolute;
+		top: 62px; left: 0;
+		width: 100%;
+		height: 100vh;
+		background: #67B7D1;
+		flex-direction: column;
+		padding: 2rem;
+		justify-content: space-around;
+		transform: translateX(100%);
+		transition: transform 1s;
+	}
+
+	.menu li{
+		text-align: center;
+	}
+
+	.menu li a{
+		font-size: 2rem;
+	}
+
+	.menu li a:hover{
 		border-top: none;
-		text-decoration: none;
 	}
 
-	.menu-wrap {
-		display: block;
-		position: fixed;
-		top: 0;
-		right: 63px;
-		z-index: 1;
+	#header-social-networks{
+		display: none;
 	}
 
-	.menu-wrap .toggler {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 2;
-		cursor: pointer;
-		width: 50px;
-		height: 50px;
-		opacity: 0;
-	}
-
-	.menu-wrap .hamburger {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		width: 30px;
-		height: 30px;
-		padding: 1rem;
-		background: #0061e4;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 50%;
-	}
-
-	/* Hamburger Line */
-	.menu-wrap .hamburger > div {
-	  position: relative;
-	  flex: none;
-	  width: 100%;
-	  height: 2px;
-	  background: #fff;
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  transition: all 0.4s ease;
-	}
-
-	/* Hamburger Lines - Top & Bottom */
-	.menu-wrap .hamburger > div::before,
-	.menu-wrap .hamburger > div::after {
-	  content: '';
-	  position: absolute;
-	  z-index: 1;
-	  top: -10px;
-	  width: 100%;
-	  height: 2px;
-	  background: #fff;
-	}
-
-	/* Moves Line Down */
-	.menu-wrap .hamburger > div::after {
-	  top: 10px;
-	}
-
-	/* Toggler Animation */
-	.menu-wrap .toggler:checked + .hamburger > div {
-	  transform: rotate(135deg);
-	}
-
-	/* Turns Lines Into X */
-	.menu-wrap .toggler:checked + .hamburger > div:before,
-	.menu-wrap .toggler:checked + .hamburger > div:after {
-	  top: 0;
-	  transform: rotate(90deg);
-	}
-
-	/* Rotate On Hover When Checked */
-	.menu-wrap .toggler:checked:hover + .hamburger > div {
-	  transform: rotate(225deg);
-	}
-
-	/* Show Menu */
-	.menu-wrap .toggler:checked ~ .menu {
-	  visibility: visible;
-	}
-
-	.menu-wrap .toggler:checked ~ .menu > div {
-	  transform: scale(1);
-	  transition-duration: 0.75s;
-	}
-
-	.menu-wrap .toggler:checked ~ .menu > div > div {
-	  opacity: 1;
-	  transition:  opacity 0.4s ease 0.4s;
-	}
-
-	.menu-wrap .menu {
-	  position: fixed;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-	  visibility: hidden;
-	  overflow: hidden;
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	}
-
-	.menu-wrap .menu > div {
-	  background: #f0f0f0;
-	  border-radius: 50%;
-	  width: 200vw;
-	  height: 200vw;
-	  display: flex;
-	  flex: none;
-	  align-items: center;
-	  justify-content: center;
-	  transform: scale(0);
-	  transition: all 0.4s ease;
-	}
-
-	.menu-wrap .menu > div > div {
-	  text-align: center;
-	  max-width: 90vw;
-	  max-height: 100vh;
-	  opacity: 0;
-	  transition: opacity 0.4s ease;
-	}
-
-	.menu-wrap .menu > div > div > ul > li {
-	  list-style: none;
-	  color: #0061e4;
-	  font-size: 1.5rem;
-	  padding: 1rem;
-	}
-
-	.menu-wrap .menu > div > div > ul > li > a {
-		color: #252525;
-		font-family: "Germania One", serif;
-		text-decoration: none;
-		transition: color 0.4s ease;
+	.open .menu{
+		transform: translateX(0);
 	}
 
 	footer{
@@ -335,5 +257,11 @@ footer .logo{
 
 	#social-networks > h4{
 		display: none;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.logo{
+		font-size: 25px;
 	}
 }
