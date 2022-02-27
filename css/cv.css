@@ -1,45 +1,42 @@
+#cv-wrapper h2{
+	border-bottom: 5px solid #67B7D1;
+}
+
 h3{
 	text-align: center;
 }
 
-main p, main ul{
-	font-size: 1.25rem;
-	margin: 0;
+#cv-wrapper p{
+	font-size: 16px;
 }
 
 .button-wrapper{
-	display: flex;
-	justify-content: end;
-	margin-right: 30px;
+	text-align: center;
 }
 
 #cv-wrapper{
+	max-width: 780px;
+	margin: 100px auto 0;
+}
+
+#info-photo{
 	display: flex;
 	justify-content: space-between;
-	word-wrap: break-word;
+	flex-wrap: wrap-reverse;
 }
 
-#cv-left{
-	margin: 0 10px 10px 15px;
-	max-width: 30%;
+#personal-information{
+	max-width: 300px;
+	padding-left: 10px;
 }
 
-#cv-right{
-	display: block;
-	margin: 20px 20px 2px 15px;
-
+#resume-photo{
+	margin: auto;
+}
+#resume-photo img{
+	max-width: 150px;
 }
 
-#cv-right div{
-	margin-bottom: 20px;
-}
-
-@media all and (max-width: 768px) {
-	#cv-wrapper{
-		flex-wrap: wrap;
-	}
-
-	#cv-left, #cv-right{
-		max-width: 100%;
-	}
+.section{
+	padding-left: 10px;
 }

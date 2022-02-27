@@ -101,6 +101,11 @@ a{
 	text-decoration: none;
 }
 
+.button-wrapper a:hover{
+	background-color: #0061e4;
+	color: #FFFFFF;
+}
+
 footer {
 	padding-top: 10px;
 	padding-left: 70px;

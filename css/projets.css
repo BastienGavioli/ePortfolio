@@ -54,9 +54,13 @@ section{
 	justify-content: space-between;
 }
 
-.button-wrapper .github{
+.button-wrapper > .github{
 	background-color: #34d058;
 	text-align: center;
+}
+
+.button-wrapper > .github:hover{
+	background-color: #34d058;
 }
 
 #itchi{
