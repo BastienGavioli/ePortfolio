@@ -38,11 +38,9 @@ nav{
 	align-items: center;
 }
 
-.logo{
-	font-family: "Germania One", serif;
-	font-size: 44px;
-	color: #0061e4;
-	text-decoration: none;
+.logo img{
+	width: 100%;
+	max-width: 300px;
 }
 
 #toggle{
@@ -81,6 +79,10 @@ nav{
 #header-social-networks a:hover{
 	border-top: none;
 	color: black;
+}
+
+main{
+	margin-top: 63px;
 }
 
 #page-title{
@@ -200,6 +202,11 @@ footer .logo{
 
 	.logo{
 		margin: auto;
+	}
+
+	.logo img{
+		width: 100%;
+		max-width: 250px;
 		z-index: 20;
 	}
 
