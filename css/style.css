@@ -26,8 +26,8 @@ header{
 	left: 0;
 	width: 100%;
 	padding: 5px 10px;
-	background: #FFFFFF;
-	color: #0061e4;
+	background: #0061E4;
+	color: #FFFFFF;
 }
 
 nav{
@@ -63,7 +63,7 @@ nav{
 	font-family: "Germania One", serif;
 	font-size: 20px;
 	padding: 10px;
-	color: #0061e4;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 
@@ -72,7 +72,7 @@ nav{
 }
 
 #header-social-networks a{
-	color: #0061e4;
+	color: #FFFFFF;
 	padding: 0 10px;
 }
 
