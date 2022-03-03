@@ -33,11 +33,21 @@ h3{
 	padding-left: 10px;
 }
 
-#resume-photo{
-	margin: auto;
+#resume-photo, #rick-video{
+	margin: auto auto 20px;
 }
+
 #resume-photo img{
 	max-width: 150px;
+	cursor: help;
+}
+
+.visible{
+	display: flex;
+}
+
+.hidden{
+	display: none;
 }
 
 .section{
