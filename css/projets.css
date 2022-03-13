@@ -60,19 +60,39 @@ section{
 }
 
 .button-wrapper > .github:hover{
-	background-color: #34d058;
+	background-color: #FFF;
+	border: 2px solid #34d058;
+	color: #34d058;
 }
 
 #itchi{
 	background-color: #DF566D;
 }
 
+#itchi:hover{
+	background-color: #FFF;
+	border: 2px solid #DF566D;
+	color: #DF566D;
+}
+
 #sportacus{
 	background-color: #8A7EB9;
 }
 
+#sportacus:hover{
+	background-color: #FFF;
+	border: 2px solid #8A7EB9;
+	color: #8A7EB9;
+}
+
 #dracovente{
 	background-color: #FAAA6D;
+}
+
+#dracovente:hover{
+	background-color: #FFF;
+	border: 2px solid #FAAA6D;
+	color: #FAAA6D;
 }
 
 #apercu{
