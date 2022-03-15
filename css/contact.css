@@ -1,9 +1,13 @@
 h2{
 	text-align: center;
-	margin: 20px 0 100px;
+	margin: 20px 0 200px;
 }
 
 main p{
 	text-align: center;
-	margin-bottom: 175px;
+	margin-bottom: 200px;
+}
+
+footer{
+	margin-top: 200px;
 }
