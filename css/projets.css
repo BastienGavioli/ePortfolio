@@ -39,7 +39,9 @@ section{
 
 .project-caption img{
 	margin-top: 10px;
+	max-width: 250px;
 	width: 100%;
+	min-width: 150px;
 	height: 100%;
 }
 
@@ -47,6 +49,8 @@ section{
 	margin-top: auto;
 	text-align: center;
 	font-size: 100%;
+	max-width: 250px;
+	min-width: 150px;
 }
 
 .button-wrapper{
