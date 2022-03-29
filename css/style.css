@@ -223,7 +223,7 @@ footer .logo{
 		justify-content: space-evenly;
 		padding: 2rem;
 		transform: translateX(100%);
-		transition: transform 1s;
+		transition: transform 0.5s;
 	}
 
 	.menu li{
