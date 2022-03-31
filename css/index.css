@@ -2,7 +2,7 @@ main{
 	margin-top: 100px;
 }
 
-h1, main p{
+h1{
 	color: #0061E4;
 }
 
@@ -10,7 +10,8 @@ main p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 30px 20% auto;
+	margin: 30px 10% auto;
 	font-size: 2em;
-	text-align: center;
+	text-indent: 1em;
+	text-align: justify;
 }
