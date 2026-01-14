@@ -1,61 +1,50 @@
-#cv-wrapper h2{
-	border-bottom: 5px solid #67B7D1;
-	margin-bottom: 10px;
+.companies > div {
+  margin-top: 3rem;
 }
 
-h3{
-	text-align: center;
+.companies .accordion {
+  margin: auto;
+  padding: .5rem 2rem;
+  border-radius: .052083333in;
+  background-color: #0D2847;
+  color: #fff;
+  cursor: pointer;
+  min-height: 54px;
+  max-width: 46.875pc;
+  text-align: left;
+  transition: 0.4s;
 }
 
-#cv-wrapper p{
-	font-size: 16px;
-	margin-bottom: 10px;
+.companies .active, .accordion:hover {
+  background-color: #004074;
 }
 
-.button-wrapper{
-	text-align: center;
+.companies .panel {
+  margin: auto;
+  padding: 0;
+  padding-bottom: 8px;
+  max-height: 0;
+  max-width: 46.875pc;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
-#cv-wrapper{
-	max-width: 780px;
-	margin: 100px auto 0;
+.companies .panel .inner {
+  padding: 1.5625pc;
+  background-color: #004074;
+  border-radius: .052083333in;
+  margin-top: 15px;
+  font-size: 15px;
 }
 
-#info-photo{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap-reverse;
-	margin-bottom: 20px;
+.companies .panel .inner img{
+  margin-bottom: 15pt;
+}
+.companies .panel .inner a,
+.companies .panel .inner a:visited {
+  color: #fff;
 }
 
-#personal-information{
-	max-width: 300px;
-	padding-left: 10px;
-}
-
-#resume-photo, #rick-video{
-	margin: auto auto 20px;
-}
-
-#resume-photo img{
-	max-width: 150px;
-	cursor: help;
-}
-
-section{
-	padding-left: 10px;
-	margin-bottom: 20px;
-}
-
-section li{
-	margin-left: 30px;
-}
-
-
-.visible{
-	display: flex;
-}
-
-.hidden{
-	display: none;
+.companies .panel .inner .description {
+  padding-top: 11.25pt;
 }

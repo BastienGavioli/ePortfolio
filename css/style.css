@@ -1,8 +1,8 @@
 @font-face{
-	font-family: "Ubuntu";
-	src:  url(../ressources/font/Ubuntu-Regular.ttf);
-	font-family: 'Germania One';
-	src:  url(../ressources/font/GermaniaOne-Regular.ttf);
+	font-family: "Inter";
+	src:  url(../resources/font/Inter.ttf);
+	font-family: 'Oswald';
+	src:  url(../resources/font/Oswald.ttf);
 }
 
 *{
@@ -13,265 +13,129 @@
 
 body{
 	margin: 0 0;
-	font-family: "Ubuntu", arial, sans-serif;
-	background-image: url("../ressources/index.jpg");
-	background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+	font-family: "Inter", sans-serif;
+	/*background: linear-gradient(#1a191d 30%,#1d1f35 150%);*/
+  background-color: #0D1520;
+  color: #fff;
 }
 
-header{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 5px 10px;
-	background: #0061E4;
-	color: #FFF;
-	box-shadow: 0 1px 5px #000;
-}
-
-nav{
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.logo img{
-	width: 100%;
-	max-width: 300px;
-}
-
-#toggle{
-	display: none;
-}
-
-.menu{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 550px;
-	list-style: none;
-}
-
-.menu {
-	padding: 0 10px;
-}
-
-.menu li a{
-	font-family: "Germania One", serif;
-	font-size: 20px;
-	padding: 10px;
-	color: #FFF;
-	text-decoration: none;
-}
-
-.menu li a:hover{
-	border-top: solid;
-}
-
-#header-social-networks a{
-	color: #FFF;
-	padding: 0 10px;
-}
-
-#header-social-networks a:hover{
-	border-top: none;
-	color: #000;
-}
-
-main{
-	margin-top: 46px;
-}
-
-#page-title{
-	margin-bottom: 80px;
-	padding: 80px 0;
-	background: #0061E4;
-	color: #FFF;
-}
-
-h1{
-	font-family: "Germania One", serif;
-	font-size: 50px;
+h1 {
+	font-family: "Oswald", sans-serif;
 	text-align: center;
+	font-size: 8vw;
 }
 
-h2{
-	color: #67B7D1;
+h2 {
+  font-family: "Oswald", sans-serif;
+	text-align: center;
+  padding-top: 50px;
+  text-transform: uppercase;
 }
 
-h4{
-	color: #0061E4;
+i {
+  color: #fff;
 }
 
-a{
-	color: #0061E4;
+.badge {
+  display: inline;
+  padding: .25rem .75rem;
+  background-color: #2870BD;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: .875rem;
 }
 
-.button-wrapper a{
-	margin: 10px 10px;
-	padding: 10px 15px;
-	background-color: #0061E4;
-	border: 2px solid #000;
-	/*box-shadow: 5px 5px #252525;*/
-	color: #FFF;
-	font-size: 20px;
-	text-decoration: none;
+.badge a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.button-wrapper a:hover{
-	background-color: #FFF;
-	border: 2px solid #0061E4;
-	color: #0061E4;
+.introduction {
+  padding-top: 25vh;
+	height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.introduction p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px auto;
+	font-size: 30px;
+}
+
+.introduction .social-networks {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 30px 4% auto;
+}
+
+.introduction .social-networks i {
+  color: #fff;
+}
+
+.expertise h2 {
+  margin-bottom: 3rem;
+}
+
+.expertise .cards {
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.expertise .cards .card {
+    width: 300px;
+    height: 200px;
+    border: 2px solid white;
+    padding: 1rem;
+}
+
+.expertise .cards .card p {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.expertise .cards .card ul {
+    margin-left: 1rem;
 }
 
 footer {
-	padding-top: 10px;
-	padding-left: 70px;
-	padding-bottom: 10px;
-	background-color: #CCF;
-	border-top: solid 2px #252525;
+  background-color: #0D1520;
 }
 
-footer .logo{
-	font-family: "Germania One", serif;
-	font-size: 44px;
-	text-decoration: none;
+footer .up-page {
+  position: relative;
+  top: -18.75pt;
+  margin: auto;
+  width: 40px;
+  padding: .5rem 0;
+  background-color: #2870BD;
+  text-align: center;
+  cursor: pointer;
 }
 
-
-#footer-column-wrapper{
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin: 0 auto auto;
+footer div {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-#footer-nav, #social-networks{
-	margin-top: 10px;
+footer .links {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-#footer-nav a{
-	margin: 0 20px 10px;
-	font-family: "Germania One", serif;
-	font-size: 20px;
-	text-decoration: none;
-}
-
-#footer-nav a:hover{
-	text-decoration: underline #0061E4;
-}
-
-#social-networks{
-	text-align: center;
-}
-
-#social-networks a{
-	margin-left: 10px;
-	color: #0061E4;
-}
-#social-networks a:hover{
-	margin-left: 10px;
-	color: #000;
-}
-
-@media (max-width: 992px){
-	#toggle{
-		display: block;
-		cursor: pointer;
-		font-size: 2rem;
-		position: relative;
-		z-index: 20;
-	}
-
-	.ouvrir{
-		display: block;
-	}
-
-	.fermer{
-		display: none !important;
-	}
-
-	.open .ouvrir{
-		display: none;
-	}
-
-	.open .fermer{
-		display: block !important;
-	}
-
-	.logo{
-		margin: auto;
-	}
-
-	.logo img{
-		width: 100%;
-		max-width: 250px;
-		z-index: 20;
-	}
-
-	.menu{
-		position: absolute;
-		top: 46px; left: 0;
-		width: 100%;
-		height: 100vh;
-		background: #67B7D1;
-		flex-direction: column;
-		justify-content: space-evenly;
-		padding: 2rem;
-		transform: translateX(100%);
-		transition: transform 0.5s;
-	}
-
-	.menu li{
-		text-align: center;
-	}
-
-	.menu li a{
-		font-size: 2rem;
-	}
-
-	.menu li a:hover{
-		border-top: none;
-	}
-
-	#header-social-networks{
-		display: none;
-	}
-
-	.open .menu{
-		transform: translateX(0);
-	}
-
-	footer{
-		padding-left: 0;
-	}
-
-	#footer-column-wrapper{
-		display: flex;
-		flex-direction: column;
-	}
-
-	#liens-footer, #footer-nav{
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto 20px;
-	}
-
-	#footer-nav > a {
-		margin-bottom: 20px;
-	}
-
-	#social-networks > h4{
-		display: none;
-	}
-}
-
-@media all and (max-width: 576px) {
-	.logo{
-		font-size: 25px;
-	}
+footer .links div{
+  background-color: #0D2847;
+  padding: .5rem 10px;
+  text-align: center;
 }

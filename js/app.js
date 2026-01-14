@@ -1,15 +1,20 @@
-const toggle = document.getElementById("toggle");
-let compteurNav = 0;
+// Accordion blocks
 
-toggle.addEventListener('click', function () {
-    document.body.classList.toggle('open');
-    compteurNav++;
-    // if scroll happens, set it to the previous value
-    // else, unable to scroll
-    if (compteurNav % 2 === 1){
-        // To get the scroll position of current webpage
-        const leftScroll = window.scrollX || document.documentElement.scrollLeft;
-        const topScroll = window.scrollY || document.documentElement.scrollTop;
-        window.onscroll = () => window.scrollTo(leftScroll, topScroll);
-    } else window.onscroll = () => {};
-});
+const acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    const panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
